@@ -1,0 +1,234 @@
+/* penser à importer la font en local */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+/* base style */
+body {
+  font-family: "Raleway", "Sans serif";
+  margin: 0;
+  /* Colors */
+  --blue: #0065FC;
+  --l-blue: #DEEBFF;
+  --gray: #F2F2F2;
+}
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+p {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: grid;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  grid-template-columns: auto 1fr auto auto;
+  grid-template-areas: "logo . navbar button";
+}
+#logo {
+  grid-area: logo;
+  padding: 0 2rem;
+  height: 2.813rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  grid-area: navbar;
+}
+nav a {
+  padding: 3rem 2rem;
+  font-weight: 500;
+  text-align: center;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
+}
+nav a[data-active=true] {
+  color: var(--blue);
+  border-top: 3px solid var(--blue);
+}
+nav a:hover {
+  color: var(--blue);
+  border-top: 3px solid var(--blue);
+}
+#signup {
+  align-items: center;
+  grid-area: button;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* Hero */
+#hero {
+  padding: 3rem 0;
+}
+form {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: auto;
+}
+#searchicon {
+  background-color: var(--gray);
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+  height: 1rem;
+}
+input {
+  border-right: none;
+  border-left: none;
+  border-top: var(--gray) 1px solid;
+  border-bottom: var(--gray) 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 14rem;
+  font-weight: bold;
+}
+input::placeholder {
+  color: #00000069;
+}
+button{
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+/* Hosting & popular */
+#hostpop-container {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+}
+.hostingWrapper, #popular, #hosting {
+  background-color: var(--gray);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+#hosting {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+#hosting h2, #popular h2 {
+  margin: 0;
+  grid-column: 1/-1;
+}
+
+/* Hosting & popular article */
+#hosting article, #popular article {
+  background-color: white;
+  padding: 0.375rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+}
+article figure {
+  margin: 0;
+}
+article figure img {
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+article figure figcaption h3, article p {
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+#viewmore {
+  font-weight: bold;
+}
+
+/* popular */
+#popular {
+  display: grid;
+  row-gap: 2rem;
+  align-items: start;
+  grid-template-rows: auto repeat(3, 1fr);
+}
+.hostingPopularTitle {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.hostingPopularWrapcontent {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+.hostingPopularWrapcontentWrapimg {
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+.hostingPopularWrapcontentWrapimgImg {
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hostingPopularWrapcontentContent {
+  display: flex;
+  flex-direction: column;
+}
+.hostingPopularWrapcontentContentWhitespace {
+  flex: 1;
+}
+.hostingPopularhostingMainCard {
+  height: 8.75rem;
+}
+
+/* Activity */
+.activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+
+/* footer */
+footer {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.footerColumnwrapper {
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.footerColumn {
+  width: 30%;
+  padding: 2rem 2rem;
+}
+.footerColumn a {
+  display: block;
+  margin: 1rem 0;
+}
+.footerColumn a:hover {
+  text-decoration: underline;
+}
