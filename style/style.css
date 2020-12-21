@@ -16,15 +16,6 @@ main {
   padding: 0 2rem;
   box-sizing: border-box;
 }
-p {
-
-}
-h1 {
-
-}
-h2 {
-
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -165,41 +156,6 @@ article figure figcaption h3, article p {
   row-gap: 2rem;
   align-items: start;
   grid-template-rows: auto repeat(3, 1fr);
-}
-.hostingPopularTitle {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.hostingPopularWrapcontent {
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  overflow: auto;
-}
-.hostingPopularWrapcontentWrapimg {
-  position: relative;
-  min-height: 100%;
-  width: 33%;
-  min-width: 33%;
-  max-width: 33%;
-}
-.hostingPopularWrapcontentWrapimgImg {
-  border-radius: 1rem 0 0 1rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hostingPopularWrapcontentContent {
-  display: flex;
-  flex-direction: column;
-}
-.hostingPopularWrapcontentContentWhitespace {
-  flex: 1;
-}
-.hostingPopularhostingMainCard {
-  height: 8.75rem;
 }
 
 /* Activity */

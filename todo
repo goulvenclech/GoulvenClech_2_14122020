@@ -28,3 +28,6 @@
 
 [] Verifier Responsive
 [] Peaufinage final + animations
+
+[] Passer les ID en Class (sauf cas particuliers)
+[] Généraliser les styles qui peuvent être réutilisable (exemple : Card)
