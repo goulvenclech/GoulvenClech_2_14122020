@@ -231,6 +231,15 @@ button{
 .articleCard figure figcaption h3, .articleCard p {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
+.grade {
+  margin: 0.5rem 0.75rem 0.25rem 0.75rem;
+}
+.grade i[data-active=true] {
+  color: var(--blue);
+}
+.grade i[data-active=false] {
+  color: var(--d-gray);
+}
 .viewmore {
   font-weight: bold;
 }
