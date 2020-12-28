@@ -17,7 +17,7 @@
 [] Responsive populaire
 [] Peaufiner populaire
 
-[] Squelette activité
+[x] Squelette activité
 [] Responsive activité
 [] Peaufiner activité
 
@@ -29,4 +29,3 @@
 [] Peaufinage final + animations
 
 [] Passer les ID en Class (sauf cas particuliers)
-[] Généraliser les styles qui peuvent être réutilisable (exemple : Card)

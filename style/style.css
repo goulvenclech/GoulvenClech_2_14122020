@@ -101,6 +101,9 @@ button{
   padding: 0 1.5rem;
   cursor: pointer;
 }
+button{
+  display: block;
+}
 .searchbuttonicon {
   display: none;
 }
@@ -182,29 +185,31 @@ button{
 }
 
 /* Hosting & popular */
-#hostpop-container {
+.hostpop-container {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: 6fr 3fr;
 }
-.hostingWrapper, #popular, #hosting {
+.hostingWrapper, #popular, .hosting {
   background-color: var(--gray);
   border-radius: 1.5rem;
   padding: 2rem;
 }
-#hosting {
+.hostingcontainer {
   display: grid;
   column-gap: 2rem;
   row-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
-#hosting h2, #popular h2 {
+.hosting h2, #popular h2 {
   margin: 0;
   grid-column: 1/-1;
 }
 
 /* Hosting & popular article */
-#hosting article, #popular article {
+.articleCard {
   background-color: white;
   padding: 0.375rem;
   border-radius: 1.25rem;
@@ -212,10 +217,10 @@ button{
   box-sizing: border-box;
   height: 100%;
 }
-article figure {
+.articleCard figure {
   margin: 0;
 }
-article figure img {
+.articleCard figure img {
   height: 7rem;
   object-fit: cover;
   max-width: 100%;
@@ -223,11 +228,70 @@ article figure img {
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-article figure figcaption h3, article p {
+.articleCard figure figcaption h3, .articleCard p {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-#viewmore {
+.viewmore {
   font-weight: bold;
+}
+
+/* activity */
+.activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.activity h2 {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 15px #0000001a;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimg img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activityCard h3 {
+  margin: 1.2rem 1.5rem;
+}
+.activity {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+.activityCard:nth-child(2) {
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+.activityCard:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.activityCard:nth-child(4) {
+  grid-column: 3/4;
+  grid-row: 2/7;
+}
+.activityCard:nth-child(5) {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.activityCard:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.activityCard:nth-child(7) {
+  grid-column: 4/5;
+  grid-row: 4/7;
 }
 
 /* popular */
