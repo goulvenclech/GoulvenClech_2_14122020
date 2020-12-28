@@ -9,6 +9,7 @@ body {
   --blue: #0065FC;
   --l-blue: #DEEBFF;
   --gray: #F2F2F2;
+  --d-gray: #d9d9d9;
 }
 main {
   max-width: 1440px;
@@ -89,7 +90,7 @@ input {
   font-weight: bold;
 }
 input::placeholder {
-  color: #00000069;
+  color: var(--d-gray);
 }
 button{
   background-color: var(--blue);
@@ -99,6 +100,85 @@ button{
   border-radius: 0 1rem 1rem 0;
   padding: 0 1.5rem;
   cursor: pointer;
+}
+.searchbuttonicon {
+  display: none;
+}
+.filters {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.filters h2 {
+  margin: 0 2rem 1rem 0;
+  display: flex;
+  align-items: center;
+}
+.filterscontainer {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid var(--d-gray);
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
+}
+.filterscontainer:last-child {
+  margin-right: 0;
+}
+.filterscontainer i {
+  background-color: var(--l-blue);
+  border-radius: 100%;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+  color: var(--blue);
+}
+.filterscontainer span {
+  margin: 0 1rem;
+}
+#results {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+#results i {
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  border: solid 1px var(--d-gray);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: var(--blue);
+}
+#results {
+  margin: 0;
+}
+@media (max-width: 640px){
+  form {
+    display: flex;
+    width: 100%;
+  }
+  input {
+    flex: 1;
+  }
+  button span {
+    display: none;
+  }
+  .searchbuttonicon {
+    display: block;
+  }
 }
 
 /* Hosting & popular */
