@@ -31,7 +31,7 @@ header {
   grid-template-columns: auto 1fr auto auto;
   grid-template-areas: "logo . navbar button";
 }
-#logo {
+.logo {
   grid-area: logo;
   padding: 0 2rem;
   height: 2.813rem;
@@ -56,7 +56,7 @@ nav a:hover {
   color: var(--blue);
   border-top: 3px solid var(--blue);
 }
-#signup {
+.signup {
   align-items: center;
   grid-area: button;
   color: var(--blue);
