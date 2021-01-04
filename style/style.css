@@ -257,6 +257,16 @@ i.searchbuttonicon {
 }
 .articleCard figure {
   margin: 0;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+.articleImgWrap {
+  overflow: hidden;
+  height: 7rem;
+  object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
 }
 .articleCard figure img {
   height: 7rem;
@@ -265,9 +275,20 @@ i.searchbuttonicon {
   width: 100%;
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.articleCard:hover figure img {
+  transform: scale(1.1);
 }
 .articleCard figure figcaption h3, .popularContainerDescription h3, .articleCard p {
   margin: 0.25rem 0.75rem 0 0.75rem;
+}
+.articleCard:hover h3, .articleCard:hover strong {
+  transition-duration: 0.5s;
+}
+.articleCard:hover h3, .articleCard:hover strong {
+  color: var(--blue);
 }
 .grade {
   margin: 0.5rem 0.75rem 0.25rem 0.75rem;
@@ -360,25 +381,37 @@ i.searchbuttonicon {
   grid-column: 1/-1;
 }
 .activityCard {
-  box-shadow: 0 0 15px #0000001a;
+  box-shadow: 0 0 15px #00000010;
   border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition-duration: 0.1s;
+  transition-duration: 0.5s;
+}
+.activityCard:hover {
+  box-shadow: 0 0 15px #00000050;
 }
 .activityCardWrapimg {
   position: relative;
   flex: 1;
+  overflow: hidden;
 }
 .activityCardWrapimg img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition-duration: 0.5s;
+}
+.activityCard:hover img {
+  transform: scale(1.1);
 }
 .activityCard h3 {
   margin: 1.2rem 1.5rem;
+  transition-duration: 0.5s;
+}
+.activityCard:hover h3 {
+  color: var(--blue);
 }
 .activity {
   grid-template-columns: repeat(4, 1fr);
