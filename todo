@@ -13,7 +13,6 @@
 [] Peaufiner hebergements
 
 [x] Squelette populaire
-    [] Card populaire
 [] Responsive populaire
 [] Peaufiner populaire
 
@@ -26,6 +25,4 @@
 [] Peaufiner footer
 
 [] Verifier Responsive
-[] Peaufinage final + animations
-
-[] Passer les ID en Class (sauf cas particuliers)
+[] Peaufinage final + animations (+ metadonnées)

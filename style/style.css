@@ -41,18 +41,18 @@ nav {
   align-items: center;
   grid-area: navbar;
 }
-nav a {
+header a {
   padding: 3rem 2rem;
   font-weight: 500;
   text-align: center;
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-nav a[data-active=true] {
+header a[data-active=true] {
   color: var(--blue);
   border-top: 3px solid var(--blue);
 }
-nav a:hover {
+header a:hover {
   color: var(--blue);
   border-top: 3px solid var(--blue);
 }
@@ -61,6 +61,34 @@ nav a:hover {
   grid-area: button;
   color: var(--blue);
   font-weight: 600;
+}
+@media (max-width: 640px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .logo {
+    order: 0;
+  }
+  .signup {
+    order: 1;
+  }
+  nav {
+    order: 2;
+  }
+  nav a {
+    border-top: none;
+    border-bottom: 3px solid var(--gray);
+    width: 50%;
+  }
+  nav a[data-active=true] {
+    border-bottom-color: var(--blue);
+    border-top: none;
+  }
+  nav a:hover {
+    border-bottom-color: var(--blue);
+    border-top: none;
+  }
 }
 
 /* Hero */
@@ -104,7 +132,7 @@ button{
 button{
   display: block;
 }
-.searchbuttonicon {
+i.searchbuttonicon {
   display: none;
 }
 .filters {
@@ -179,8 +207,14 @@ button{
   button span {
     display: none;
   }
-  .searchbuttonicon {
+  i.searchbuttonicon {
     display: block;
+  }
+  .filters h2 {
+    width: 100%;
+  }
+  .filterscontainer {
+    margin-right: 1rem;
   }
 }
 
@@ -190,7 +224,7 @@ button{
   column-gap: 2rem;
   grid-template-columns: 6fr 3fr;
 }
-.hostingWrapper, #popular, .hosting {
+.hostingWrapper, .popular, .hosting {
   background-color: var(--gray);
   border-radius: 1.5rem;
   padding: 2rem;
@@ -203,12 +237,12 @@ button{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.hosting h2, #popular h2 {
+.hosting h2, .popular h2 {
   margin: 0;
   grid-column: 1/-1;
 }
 
-/* Hosting & popular article */
+/* Hosting & popular card */
 .articleCard {
   background-color: white;
   padding: 0.375rem;
@@ -228,7 +262,7 @@ button{
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-.articleCard figure figcaption h3, .articleCard p {
+.articleCard figure figcaption h3, .popularContainerDescription h3, .articleCard p {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
 .grade {
@@ -242,6 +276,38 @@ button{
 }
 .viewmore {
   font-weight: bold;
+}
+
+/* Popular card */
+.popularCard {
+  height: 8.75rem;
+}
+.popularContainer {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+.popularContainerImg {
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+.popularContainerImg img {
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.popularContainerDescription {
+  display: flex;
+  flex-direction: column;
+}
+.gradePopular {
+  margin-top: auto;
 }
 
 /* activity */
@@ -304,7 +370,7 @@ button{
 }
 
 /* popular */
-#popular {
+.popular {
   display: grid;
   row-gap: 2rem;
   align-items: start;

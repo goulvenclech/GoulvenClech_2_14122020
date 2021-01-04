@@ -16,8 +16,8 @@
     <nav>
       <a href="#" data-active="true">Hébergement</a>
       <a href="#" data-active="false">Activités</a>
-      <a class="signup" href="#">S'inscrire</a>
     </nav>
+    <a class="signup" href="#">S'inscrire</a>
   </header>
 
   <main>
@@ -37,8 +37,8 @@
         </span>
         <input type="search" placeholder="Marseille, France" size="1">
         <button>
-          <i class="searchbuttonicon fas fa-search"></i>
-          <span>Rechercher<span>
+          <i class="fas fa-search searchbuttonicon"></i>
+          <span>Rechercher</span>
         </button>
       </form>
       <!-- Filters -->
@@ -220,56 +220,77 @@
       </div>
 
       <!-- Popular -->
-      <aside id="popular">
+      <aside class="popular">
         <h2>
           Les plus populaire
         </h2>
-        <article class="articleCard">
-          <a href="#">
-            <figure>
-              <img
+        <article class="articleCard popularCard">
+          <a class="popularContainer" href="#">
+            <div class="popularContainerImg">
+              <img 
+                class="hostingPopularWrapcontentWrapimgImg"
                 src="./assets/placeholder.jpg"
-                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
               >
-              <figcaption>
-                <h3>
-                  Auberge la Cannebière
-                </h3>
-              </figcaption>
-            </figure>
-            <p>Nuit à partir de <strong>25€</strong></p>
+            </div>
+            <div class="popularContainerDescription">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>
+                Nuit à partir de <strong>128€</strong>
+              </p>
+              <div class="grade gradePopular">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="false"></i>
+              </div>
+            </div>
           </a>
         </article>
-        <article class="articleCard">
-          <a href="#">
-            <figure>
-              <img
+        <article class="articleCard popularCard">
+          <a class="popularContainer" href="#">
+            <div class="popularContainerImg">
+              <img 
+                class="hostingPopularWrapcontentWrapimgImg"
                 src="./assets/placeholder.jpg"
-                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
               >
-              <figcaption>
-                <h3>
-                  Auberge la Cannebière
-                </h3>
-              </figcaption>
-            </figure>
-            <p>Nuit à partir de <strong>25€</strong></p>
+            </div>
+            <div class="popularContainerDescription">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>
+                Nuit à partir de <strong>128€</strong>
+              </p>
+              <div class="grade gradePopular">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="false"></i>
+              </div>
+            </div>
           </a>
-        </article class="articleCard">
-        <article class="articleCard">
-          <a href="#">
-            <figure>
-              <img
+        </article>
+        <article class="articleCard popularCard">
+          <a class="popularContainer" href="#">
+            <div class="popularContainerImg">
+              <img 
+                class="hostingPopularWrapcontentWrapimgImg"
                 src="./assets/placeholder.jpg"
-                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
               >
-              <figcaption>
-                <h3>
-                  Auberge la Cannebière
-                </h3>
-              </figcaption>
-            </figure>
-            <p>Nuit à partir de <strong>25€</strong></p>
+            </div>
+            <div class="popularContainerDescription">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>
+                Nuit à partir de <strong>128€</strong>
+              </p>
+              <div class="grade gradePopular">
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="true"></i>
+                <i class="fas fa-star" data-active="false"></i>
+              </div>
+            </div>
           </a>
         </article>
       </aside>
