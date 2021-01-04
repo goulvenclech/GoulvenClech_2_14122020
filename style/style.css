@@ -149,7 +149,7 @@ i.searchbuttonicon {
   display: flex;
   align-items: center;
 }
-.filterscontainer {
+.filter {
   display: flex;
   align-items: center;
   margin-right: 2rem;
@@ -157,13 +157,19 @@ i.searchbuttonicon {
   border-radius: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;
-  transition-duration: 0.1s;
   font-weight: bold;
+  transition-duration: 0.5s;
 }
-.filterscontainer:last-child {
+.filter:hover {
+  border: 2px solid var(--l-blue);
+}
+.filter:active {
+  background-color: var(--l-blue);
+}
+.filter:last-child {
   margin-right: 0;
 }
-.filterscontainer i {
+.filter i {
   background-color: var(--l-blue);
   border-radius: 100%;
   height: 3rem;
@@ -176,8 +182,12 @@ i.searchbuttonicon {
   margin: -2px;
   color: var(--blue);
 }
-.filterscontainer span {
+.filter span {
   margin: 0 1rem;
+  transition-duration: 0.5s;
+}
+.filter:hover span {
+  color: var(--blue);
 }
 #results {
   display: flex;
@@ -301,6 +311,10 @@ i.searchbuttonicon {
 }
 .viewmore {
   font-weight: bold;
+  transition-duration: 0.5s;
+}
+.viewmore:hover {
+  color: var(--blue);
 }
 
 /* Popular card */

@@ -1,28 +1,28 @@
 [x] Squelette global
 
 [x] Squelette header
-[] Responsive header
-[] Peaufiner header
+[x] Responsive header
+[x] Peaufiner header
 
 [x] Squelette hero
-[] Responsive hero
-[] Peaufiner hero
+[x] Responsive hero
+[x] Peaufiner hero
 
 [x] Squelette hebergements
-[] Responsive hebergements
-[] Peaufiner hebergements
+[x] Responsive hebergements
+[x] Peaufiner hebergements
 
 [x] Squelette populaire
-[] Responsive populaire
+[x] Responsive populaire
 [] Peaufiner populaire
 
 [x] Squelette activité
-[] Responsive activité
-[] Peaufiner activité
+[x] Responsive activité
+[x] Peaufiner activité
 
 [x] Squelette footer
-[] Responsive footer
+[x] Responsive footer
 [] Peaufiner footer
 
 [] Verifier Responsive
-[] Peaufinage final + animations (+ metadonnées)
+[] Peaufinage final + metadonnées
