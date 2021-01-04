@@ -241,6 +241,43 @@ i.searchbuttonicon {
   margin: 0;
   grid-column: 1/-1;
 }
+@media (max-width: 1440px) {
+  .hostpop-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .popular {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .popular h2 {
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 925px) {
+  .hosting {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 925px) and (min-width: 650px) {
+  .hosting {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .hosting {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  .popular {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(3, 9rem);
+  }
+}
+
 
 /* Hosting & popular card */
 .articleCard {
@@ -344,29 +381,45 @@ i.searchbuttonicon {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
 }
-.activityCard:nth-child(2) {
-  grid-row: 2/7;
-  grid-column: 1/2;
+@media (min-width: 1024px) {
+  .activityCard:nth-of-type(1) {
+    grid-row: 2/7;
+    grid-column: 1/2;
+  }
+  .activityCard:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .activityCard:nth-of-type(3) {
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
+  .activityCard:nth-of-type(4) {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .activityCard:nth-of-type(5) {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .activityCard:nth-of-type(6) {
+    grid-column: 4/5;
+    grid-row: 4/7;
+  }
 }
-.activityCard:nth-child(3) {
-  grid-column: 2/3;
-  grid-row: 2/5;
+@media (max-width: 1024px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 12rem 12rem 12rem;
+  }
 }
-.activityCard:nth-child(4) {
-  grid-column: 3/4;
-  grid-row: 2/7;
-}
-.activityCard:nth-child(5) {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
-.activityCard:nth-child(6) {
-  grid-column: 2/3;
-  grid-row: 6/7;
-}
-.activityCard:nth-child(7) {
-  grid-column: 4/5;
-  grid-row: 4/7;
+@media (max-width: 640px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  }
 }
 
 /* popular */
