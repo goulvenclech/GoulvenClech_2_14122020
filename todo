@@ -14,7 +14,7 @@
 
 [x] Squelette populaire
 [x] Responsive populaire
-[] Peaufiner populaire
+[x] Peaufiner populaire
 
 [x] Squelette activité
 [x] Responsive activité
@@ -22,7 +22,10 @@
 
 [x] Squelette footer
 [x] Responsive footer
-[] Peaufiner footer
+[x] Peaufiner footer
 
 [] Verifier Responsive
 [] Peaufinage final + metadonnées
+[] Validation W3C (Html + Css)
+
+[] Avoir tout les onglets ouverts (W3C tests + code source + github + site Brave et Firefox)
